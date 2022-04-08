@@ -30,6 +30,46 @@ don't touch text in html <a> tags
 .
 
 
+entities inside raw links
+.
+https://example.com/foo&amp;bar
+.
+<p><a href="https://example.com/foo&amp;amp;bar">https://example.com/foo&amp;amp;bar</a></p>
+.
+
+
+emphasis inside raw links (asterisk)
+.
+https://example.com/foo*bar*baz
+.
+<p><a href="https://example.com/foo*bar*baz">https://example.com/foo*bar*baz</a></p>
+.
+
+
+emphasis inside raw links (underscore)
+.
+https://example.com/foo._bar_.baz
+.
+<p><a href="https://example.com/foo._bar_.baz">https://example.com/foo._bar_.baz</a></p>
+.
+
+
+backticks inside raw links
+.
+https://example.com/foo`bar`baz
+.
+<p><a href="https://example.com/foo%60bar%60baz">https://example.com/foo`bar`baz</a></p>
+.
+
+
+links inside raw links
+.
+https://example.com/foo[123](456)bar
+.
+<p><a href="https://example.com/foo%5B123%5D(456)bar">https://example.com/foo[123](456)bar</a></p>
+.
+
+
 match links without protocol
 .
 www.example.org
